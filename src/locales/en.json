@@ -1,0 +1,41 @@
+{
+  "login": {
+    "title": "Login",
+    "username": "username",
+    "password": "Password",
+    "userNamePlaceholder": "Enter your Username",
+    "passwordPlaceholder": "Enter your Password",
+    "signbutton": "Sign in"
+  },
+  "settings": {
+    "title": "Settings",
+    "changeTheme": "Change Theme",
+    "changeLanguage": "Change Language",
+    "light": "Light",
+    "dark": "Dark",
+    "ar": "AR",
+    "en": "EN",
+    "logout": "Logout",
+    "welcome": "Welcome :"
+  },
+  "home": {
+    "title": "Home",
+    "searchCharacters": "Search characters.."
+  },
+  "details": {
+    "title": "Character Details",
+    "comics": "Comics",
+    "noDescription": "No description available",
+    "noComics": "No comics found"
+  },
+  "errors": {
+    "badRequest": "Bad Request",
+    "unauthorized": "Unauthorized",
+    "somethingWrong": "Sorry, something went wrong",
+    "wrongRequest": "Wrong request, please try again",
+    "internalError": "Internal Server Error, please try again",
+    "connectionTimeout": "Connection Timeout , No response from server. Please try again later.",
+    "requestError": "Request Setup Error",
+    "unexpectedError": "An unexpected error occurredr"
+  }
+}

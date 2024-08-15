@@ -1,0 +1,41 @@
+{
+  "login": {
+    "title": "تسجيل الدخول",
+    "username": "اسم المستخدم",
+    "password": "كلمة المرور",
+    "userNamePlaceholder": "أدخل اسم المستخدم الخاص بك",
+    "passwordPlaceholder": "أدخل كلمة المرور الخاصة بك",
+    "signbutton": "تسجيل الدخول"
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "changeTheme": "تغيير الثيم",
+    "changeLanguage": "تغيير اللغة",
+    "light": "فاتح",
+    "dark": "داكن",
+    "ar": "العربية",
+    "en": "الإنجليزية",
+    "logout": "تسجيل الخروج",
+    "welcome": "مرحبًا :"
+  },
+  "home": {
+    "title": "الرئيسية",
+    "searchCharacters": "بحث عن الشخصيات..."
+  },
+  "details": {
+    "title": "تفاصيل الشخصية",
+    "comics": "القصص",
+    "noDescription": "لا توجد وصف متاح",
+    "noComics": "لم يتم العثور على قصص "
+  },
+  "errors": {
+    "badRequest": "طلب غير صالح",
+    "unauthorized": "غير مصرح",
+    "somethingWrong": "عذرًا، حدث خطأ ما",
+    "wrongRequest": "طلب غير صحيح، يرجى المحاولة مرة أخرى",
+    "internalError": "خطأ في الخادم الداخلي، يرجى المحاولة مرة أخرى",
+    "connectionTimeout": "انتهت مهلة الاتصال، لا يوجد استجابة من الخادم. يرجى المحاولة لاحقًا.",
+    "requestError": "خطأ في إعداد الطلب",
+    "unexpectedError": "حدث خطأ غير متوقع"
+  }
+}
