@@ -25,7 +25,7 @@ const useHome = () => {
       // The 'limit' parameter specifies the number of characters to retrieve from the API.
       const res = await fetchCharacters({
         params: {
-          limit: 1,
+          limit: 10,
         },
       });
       setErrorMessage(null);
