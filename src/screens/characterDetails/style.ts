@@ -14,9 +14,9 @@ export default (theme: ColorsThemeTypes) => {
       marginBottom: verticalScale(16),
     },
     characterImage: {
-      width: scale(240),
-      height: verticalScale(240),
-      borderRadius: scale(120),
+      width: scale(200),
+      height: verticalScale(200),
+      borderRadius: scale(100),
       resizeMode: 'cover',
     },
     detailsContainer: {

@@ -19,7 +19,7 @@ export default (theme: ColorsThemeTypes) => {
     thumbnail: {
       width: scale(60),
       height: verticalScale(60),
-      borderRadius: 30,
+      borderRadius: scale(30),
       marginRight: scale(10),
     },
     textContainer: {
