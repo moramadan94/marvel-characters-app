@@ -27,7 +27,7 @@ function LoginForm() {
 
       <Button
         disabled={isLoginButtonDisabled}
-        title={translate('login.signbutton')}
+        title={translate('login.signIn')}
         onPress={handleLogin}
       />
     </>

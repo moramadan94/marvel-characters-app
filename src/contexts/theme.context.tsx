@@ -1,5 +1,3 @@
-// ThemeContext.tsx
-
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {darkTheme} from '@src/theme/dark-theme';
 import {lightTheme} from '@src/theme/light-theme';

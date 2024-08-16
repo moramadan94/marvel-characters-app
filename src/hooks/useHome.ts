@@ -21,7 +21,10 @@ const useHome = () => {
     setLoading(true);
     setRefreshing(false);
     try {
-      const res = await fetchCharacters({});
+      //Fetch a list of characters with a maximum of 10 results
+      // The 'limit' parameter specifies the number of characters to retrieve from the API.
+      const res = await fetchCharacters({limit: 10});
+      setErrorMessage(null);
       setCharacters(res.data.results);
     } catch (err) {
       const apiError = err as APIError;
@@ -77,6 +80,7 @@ const useHome = () => {
     clearSearch,
     refreshing,
     onRefresh,
+    loadCharacters,
   };
 };
 

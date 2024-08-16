@@ -20,7 +20,7 @@ export default (theme: ColorsThemeTypes) => {
       backgroundColor: theme.background,
       color: theme?.text,
       borderColor: Colors.lightGrey,
-      borderWidth: 1,
+      borderWidth: scale(1),
       padding: 0,
       marginVertical: verticalScale(5),
     },
