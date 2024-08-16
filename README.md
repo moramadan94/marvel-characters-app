@@ -55,7 +55,7 @@ cd marvel-characters-app
 
 ### Installing Dependencies
 
-Install dependencies with Yarn:
+Install dependencies with npm:
 
 ```bash
 npm install
