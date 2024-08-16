@@ -1,4 +1,3 @@
-
 # Marvel Characters App
 
 ## Overview
@@ -78,7 +77,6 @@ Never store sensitive API keys in your app code. Anything included in your code 
 
 Source: [React Native Security Documentation](https://reactnative.dev/docs/security#storing-sensitive-info)
 
-
 ### Running the App
 
 #### iOS Setup
@@ -97,6 +95,22 @@ Source: [React Native Security Documentation](https://reactnative.dev/docs/secur
 
    - This ensures the specific version of CocoaPods is used as defined in the `Gemfile`.
    - Alternatively, you can run `pod install`, which uses the globally installed version of CocoaPods.
+
+     **When to Use**:
+
+   - Use this command after running `bundle install` to install or update the CocoaPods dependencies in your `ios` directory.
+   - It ensures that the version of CocoaPods used is the one specified in the `Gemfile`, which helps maintain consistency across different development environments.
+
+     ```bash
+     pod install
+     ```
+
+   - This command installs the CocoaPods dependencies for your iOS project using the globally installed version of CocoaPods.
+
+     **When to Use**:
+
+   - Use `pod install` when you want to install CocoaPods dependencies using whatever version of CocoaPods is installed globally on your machine.
+   - This command is simpler and quicker, but it does not guarantee that the exact same version of CocoaPods is used as in other environments (e.g., other developers' machines or CI/CD pipelines).
 
 3. **Run the iOS App**:
 
@@ -174,4 +188,3 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
