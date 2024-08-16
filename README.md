@@ -66,7 +66,7 @@ cd marvel-characters-app
 Install the project dependencies using Yarn:
 
 ```bash
-yarn install
+npm install
 ```
 
 ### Configuring API Keys
