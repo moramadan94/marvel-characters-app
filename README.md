@@ -84,6 +84,7 @@ Source: [React Native Security Documentation](https://reactnative.dev/docs/secur
 1. **Install Dependencies**:
 
    ```bash
+   cd ios
    bundle install
    ```
 
