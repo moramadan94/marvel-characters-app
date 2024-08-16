@@ -66,7 +66,7 @@ cd marvel-characters-app
 Install the project dependencies using Yarn:
 
 ```bash
-yarn install
+npm install
 ```
 
 ### Configuring API Keys
@@ -97,6 +97,10 @@ yarn install
 
    ```bash
    cd ios
+   bundle install
+   bundle exec pod install
+   
+   or 
    pod install
    cd ..
    ```
@@ -106,13 +110,13 @@ yarn install
 2. Start the development server:
 
    ```bash
-   yarn start
+   npm start
    ```
 
 3. Run the app on an iOS simulator or connected device:
 
    ```bash
-   yarn ios
+   npm run ios
    ```
 
 #### For Android
@@ -120,13 +124,14 @@ yarn install
 1. Start the development server:
 
    ```bash
-   yarn start
+   npm start
    ```
 
 2. Run the app on an Android emulator or connected device:
 
    ```bash
-   yarn android
+   npm run android
+
    ```
 
 ## Usage
