@@ -1,4 +1,4 @@
-import {CharacterList} from '@components/organisms';
+import {CharacterList, ScreenWrapper} from '@components/organisms';
 import React from 'react';
 import {View} from 'react-native';
 import {styles} from './style';
@@ -20,25 +20,27 @@ const Home = () => {
     loadCharacters,
   } = useHome();
   return (
-    <View style={[styles.container, {backgroundColor: theme.background}]}>
-      {errorMessage ? (
-        <ErrorView
-          errorMessage={errorMessage}
-          imageSource={ErrorLogo}
-          onRetry={loadCharacters}
-        />
-      ) : (
-        <CharacterList
-          characters={filteredCharacters}
-          onCharacterPress={handlePressCharacter}
-          handleSearchChange={handleSearchChange}
-          searchQuery={searchQuery}
-          clearSearch={clearSearch}
-          refreshing={refreshing}
-          onRefresh={onRefresh}
-        />
-      )}
-    </View>
+    <ScreenWrapper>
+      <View style={[styles.container, {backgroundColor: theme.background}]}>
+        {errorMessage ? (
+          <ErrorView
+            errorMessage={errorMessage}
+            imageSource={ErrorLogo}
+            onRetry={loadCharacters}
+          />
+        ) : (
+          <CharacterList
+            characters={filteredCharacters}
+            onCharacterPress={handlePressCharacter}
+            handleSearchChange={handleSearchChange}
+            searchQuery={searchQuery}
+            clearSearch={clearSearch}
+            refreshing={refreshing}
+            onRefresh={onRefresh}
+          />
+        )}
+      </View>
+    </ScreenWrapper>
   );
 };
 

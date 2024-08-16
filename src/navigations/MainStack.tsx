@@ -20,6 +20,7 @@ const MainStack = () => {
       initialRouteName={MainRoutes.Home}
       screenOptions={({}) => ({
         headerShown: true,
+        headerBackTitleVisible: false,
         headerRight: () => (
           <View style={{paddingHorizontal: scale(10)}}>
             <IconButton

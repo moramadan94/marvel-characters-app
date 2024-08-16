@@ -1,6 +1,7 @@
 import {StackNavigationProp} from '@react-navigation/stack';
 import {MainRoutes, ThemeTypeEnum} from '../enums';
 import {RouteProp} from '@react-navigation/native';
+import {AxiosRequestConfig} from 'axios';
 
 interface ColorsThemeTypes {
   primary: string;
@@ -96,6 +97,12 @@ export type MainStackParamList = {
   };
 };
 
+type FetchCharactersConfig = AxiosRequestConfig & {
+  params?: {
+    [key: string]: any;
+  };
+};
+
 type APIError = {
   message: string;
   code: number;
@@ -110,5 +117,6 @@ export type {
   HomeCharacter,
   DetailsCharacter,
   CharacterDetailScreenProps,
+  FetchCharactersConfig,
   APIError,
 };

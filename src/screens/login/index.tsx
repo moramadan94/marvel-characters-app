@@ -1,5 +1,5 @@
 import {MarvelLogo} from '@assets/images';
-import {LoginForm} from '@components/organisms';
+import {LoginForm, ScreenWrapper} from '@components/organisms';
 import React from 'react';
 import {View, Image} from 'react-native';
 import {styles} from './style';
@@ -14,27 +14,29 @@ const Login = () => {
   const {theme} = useThemeContext();
 
   return (
-    <View style={[styles.container, {backgroundColor: theme.background}]}>
-      <View style={styles.iconButtonContainer}>
-        <IconButton
-          onPress={() => NavigationService.navigate(MainRoutes.Settings)}
-          icon={SettingsIcon}
-          iconSize={25}
-          stroke={theme.text}
-        />
-        <Image
-          source={MarvelLogo}
-          style={styles.logoStyle}
-          resizeMode="contain"
-        />
+    <ScreenWrapper>
+      <View style={[styles.container, {backgroundColor: theme.background}]}>
+        <View style={styles.iconButtonContainer}>
+          <IconButton
+            onPress={() => NavigationService.navigate(MainRoutes.Settings)}
+            icon={SettingsIcon}
+            iconSize={25}
+            stroke={theme.text}
+          />
+          <Image
+            source={MarvelLogo}
+            style={styles.logoStyle}
+            resizeMode="contain"
+          />
+        </View>
+        <View style={styles.btnContainer}>
+          <Text style={[styles.titleStyle, {color: theme.text}]}>
+            {translate('login.signIn')}
+          </Text>
+          <LoginForm />
+        </View>
       </View>
-      <View style={styles.btnContainer}>
-        <Text style={[styles.titleStyle, {color: theme.text}]}>
-          {translate('login.signIn')}
-        </Text>
-        <LoginForm />
-      </View>
-    </View>
+    </ScreenWrapper>
   );
 };
 
