@@ -184,8 +184,7 @@ Source: [React Native Security Documentation](https://reactnative.dev/docs/secur
 ### Screenshots
 
 ## iOS (Light Theme,English Language)
-![login](https://github.com/user-attachments/assets/97b980bb-cb17-4866-9431-a7f6ceb39ea2)
-![home1](https://github.com/user-attachments/assets/fd1331ca-8c66-4b53-a8d8-d9c8928137a9)
+![login](https://github.com/user-attachments/assets/97b980bb-cb17-4866-9431-a7f6ceb39ea2) ![home1](https://github.com/user-attachments/assets/fd1331ca-8c66-4b53-a8d8-d9c8928137a9)
 ![home2](https://github.com/user-attachments/assets/6de72830-cad1-4fe8-b48a-0a046b4c9f36)
 ![details](https://github.com/user-attachments/assets/0fbb0184-6852-49ab-8c1d-3fe8c66e55ed)
 ![setting](https://github.com/user-attachments/assets/78cc51a4-193c-43c1-9886-bf3bb4ee62a1)
