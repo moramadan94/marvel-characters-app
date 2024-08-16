@@ -191,8 +191,8 @@ Details Screen
 ![details](https://github.com/user-attachments/assets/0fbb0184-6852-49ab-8c1d-3fe8c66e55ed)
 setting Screen
 ![setting](https://github.com/user-attachments/assets/78cc51a4-193c-43c1-9886-bf3bb4ee62a1)
-Error Screen (dark)
-![Uploading Simulator Screen Shot - iPhone 11 - 2024-08-17 at 02.45.38.png…]()
+Error Screen 
+![error](https://github.com/user-attachments/assets/6ab612d8-699e-4b33-a863-c0f8126c0c25)
 Login Screen (dark)
 ![dark-login](https://github.com/user-attachments/assets/61c517d4-dc45-4676-914b-a0d7f3cf738d)
 Home Screen (dark)
