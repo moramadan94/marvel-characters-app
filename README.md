@@ -97,6 +97,10 @@ npm install
 
    ```bash
    cd ios
+   bundle install
+   bundle exec pod install
+   
+   or 
    pod install
    cd ..
    ```
@@ -106,13 +110,13 @@ npm install
 2. Start the development server:
 
    ```bash
-   yarn start
+   npm start
    ```
 
 3. Run the app on an iOS simulator or connected device:
 
    ```bash
-   yarn ios
+   npm run ios
    ```
 
 #### For Android
@@ -120,13 +124,14 @@ npm install
 1. Start the development server:
 
    ```bash
-   yarn start
+   npm start
    ```
 
 2. Run the app on an Android emulator or connected device:
 
    ```bash
-   yarn android
+   npm run android
+
    ```
 
 ## Usage
