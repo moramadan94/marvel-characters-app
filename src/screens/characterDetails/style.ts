@@ -1,4 +1,4 @@
-import {moderateScale, scale, verticalScale} from '@styles';
+import {Colors, moderateScale, scale, verticalScale} from '@styles';
 import {ColorsThemeTypes} from '@utils/types';
 import {StyleSheet} from 'react-native';
 
@@ -7,16 +7,19 @@ export default (theme: ColorsThemeTypes) => {
     container: {
       flex: 1,
       backgroundColor: theme.background,
-      padding: scale(16),
+      padding: scale(18),
     },
     characterImageContainer: {
       alignItems: 'center',
-      marginBottom: verticalScale(16),
+      marginTop: verticalScale(15),
+      marginBottom: verticalScale(30),
+      marginHorizontal: scale(15),
     },
     characterImage: {
-      width: scale(200),
+      width: '100%',
       height: verticalScale(200),
-      borderRadius: scale(100),
+      maxHeight: verticalScale(200),
+      borderRadius: scale(15),
       resizeMode: 'cover',
     },
     detailsContainer: {
@@ -25,34 +28,40 @@ export default (theme: ColorsThemeTypes) => {
     characterName: {
       fontSize: moderateScale(24),
       fontWeight: 'bold',
-      marginBottom: verticalScale(8),
+      marginBottom: verticalScale(20),
       color: theme.text,
     },
     characterDescription: {
       fontSize: moderateScale(16),
       marginBottom: verticalScale(30),
+      paddingHorizontal: scale(8),
       color: theme.text,
     },
+
     comicsTitle: {
-      fontSize: moderateScale(20),
+      fontSize: moderateScale(22), // Slightly larger font size
       fontWeight: 'bold',
-      marginBottom: verticalScale(8),
+      marginBottom: verticalScale(12), // Increased spacing
       color: theme.text,
     },
     comicItem: {
-      padding: scale(8),
-      borderBottomWidth: 1,
-      borderBottomColor: theme.text,
+      padding: scale(12),
+      backgroundColor: Colors.lightGrey,
+      shadowColor: theme.text,
+      shadowOffset: {width: 0, height: 2},
+      marginBottom: verticalScale(8),
+      borderRadius: scale(8),
+      marginHorizontal: scale(8),
     },
     comicName: {
-      fontSize: moderateScale(16),
-      color: theme.text,
+      fontSize: moderateScale(18),
+      color: Colors.white,
     },
     noComicsText: {
-      fontSize: moderateScale(16),
+      fontSize: moderateScale(18),
       color: theme.text,
       textAlign: 'center',
-      marginTop: verticalScale(16),
+      marginTop: verticalScale(20),
     },
   });
 };

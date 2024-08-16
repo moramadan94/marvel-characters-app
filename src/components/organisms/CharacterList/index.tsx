@@ -8,6 +8,7 @@ import {Text} from '@components/atoms';
 import {Image} from 'react-native-animatable';
 import {SearchLogo} from '@assets/images';
 import {translate} from '@utils/helpers';
+import {Colors} from '@styles';
 
 interface CharacterListProps {
   characters: HomeCharacter[];
@@ -55,11 +56,14 @@ const CharacterList = ({
           <RefreshControl
             refreshing={refreshing}
             onRefresh={onRefresh}
-            colors={['#007bff']} // Color of the refresh control spinner
+            colors={[Colors.secondary]}
+            tintColor={Colors.secondary}
           />
         }
         keyExtractor={item => item.id.toString()}
         contentContainerStyle={styles.list}
+        showsVerticalScrollIndicator={false}
+        showsHorizontalScrollIndicator={false}
       />
     </View>
   );

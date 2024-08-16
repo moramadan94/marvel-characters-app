@@ -17,9 +17,9 @@ export default (theme: ColorsThemeTypes) => {
       borderColor: Colors.lightShadeGray,
     },
     thumbnail: {
-      width: scale(60),
-      height: verticalScale(60),
-      borderRadius: scale(30),
+      width: 60,
+      height: 60,
+      borderRadius: 30,
       marginRight: scale(10),
     },
     textContainer: {

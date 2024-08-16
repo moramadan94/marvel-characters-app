@@ -26,7 +26,7 @@ export const styles = StyleSheet.create({
   },
   searchInput: {
     flex: 1,
-    height: verticalScale(40),
+    height: verticalScale(50),
     paddingHorizontal: scale(10),
     fontSize: moderateScale(16),
     textAlign: I18nManager.isRTL ? 'right' : 'left',
