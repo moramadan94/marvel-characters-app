@@ -5,7 +5,7 @@
     "password": "Password",
     "userNamePlaceholder": "Enter your Username",
     "passwordPlaceholder": "Enter your Password",
-    "signbutton": "Sign in"
+    "signIn": "Sign in"
   },
   "settings": {
     "title": "Settings",
@@ -36,6 +36,8 @@
     "internalError": "Internal Server Error, please try again",
     "connectionTimeout": "Connection Timeout , No response from server. Please try again later.",
     "requestError": "Request Setup Error",
-    "unexpectedError": "An unexpected error occurredr"
+    "unexpectedError": "An unexpected error occurredr",
+    "rateLimitExceeded": "API rate limit exceeded. Please try again later",
+    "retry": "Retry"
   }
 }

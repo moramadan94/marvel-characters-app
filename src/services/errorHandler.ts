@@ -33,6 +33,12 @@ export const handleApiError = (error: unknown): APIError => {
             code: 404,
             status: response.statusText,
           };
+        case 429:
+          return {
+            message: translate('errors.rateLimitExceeded'),
+            code: 429,
+            status: response.statusText,
+          };
         case 500:
           return {
             message: translate('errors.internalError'),

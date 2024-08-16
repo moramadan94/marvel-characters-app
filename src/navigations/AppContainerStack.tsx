@@ -6,9 +6,9 @@ import {StackNames} from '@utils/enums';
 import {useDispatch, useSelector} from 'react-redux';
 import {AppDispatch, RootState} from '@store/index';
 import {checkUserAuthentication} from '@store/slices/authThunks';
-import Loader from '@components/molecules/Loader';
 import {View} from 'react-native-animatable';
 import {useThemeContext} from '@contexts/theme.context';
+import {Loader} from '@components/molecules';
 
 const AppStackNavigator = createStackNavigator();
 const AppContainer = () => {

@@ -6,11 +6,11 @@ import {MainStackParamList} from '@utils/types';
 import {View} from 'react-native';
 import {scale} from '@styles';
 import CharacterDetail from '@screens/characterDetails';
-import IconButton from '@components/atoms/IconButton';
 import {SettingsIcon} from '@assets/svg';
 import {translate} from '@utils/helpers';
 import NavigationService from './NavigationService';
 import Settings from '@screens/settings';
+import {IconButton} from '@components/atoms';
 
 const MainNavigator = createStackNavigator<MainStackParamList>();
 

@@ -2,10 +2,9 @@ import {LanguageEnum, ThemeTypeEnum} from '@utils/enums';
 import React from 'react';
 import {TouchableOpacity, View} from 'react-native';
 import {Colors} from '@styles';
-import IconButton from '@components/atoms/IconButton';
 import {CloseIcon, LogoutIcon} from '@assets/svg';
 import {handleLanguageChange, translate} from '@utils/helpers';
-import {Text} from '@components/atoms';
+import {IconButton, Text} from '@components/atoms';
 import {styles} from './style';
 import useSettings from '@hooks/useSettings';
 

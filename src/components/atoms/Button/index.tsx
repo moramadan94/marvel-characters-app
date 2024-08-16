@@ -20,7 +20,7 @@ interface ButtonPropsInterface extends TouchableOpacityProps {
 
 const Button = ({
   disabled = false,
-  title = 'Login',
+  title,
   overrideStyle,
   overrideTextStyle,
   overrideBtnStyle,

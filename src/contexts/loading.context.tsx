@@ -1,6 +1,6 @@
-import Loader from '@components/molecules/Loader';
 import React, {createContext, useState, ReactNode, useContext} from 'react';
 import {useThemeContext} from './theme.context';
+import {Loader} from '@components/molecules';
 
 interface LoadingContextProps {
   loading: boolean;
