@@ -14,7 +14,6 @@ export const checkUserAuthentication = createAsyncThunk(
   async (_, {rejectWithValue}) => {
     try {
       const username = await AsyncStorage.getItem('username');
-      console.log('username', username);
       return username;
     } catch (error) {
       return rejectWithValue('Failed to check authentication state');

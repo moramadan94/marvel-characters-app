@@ -14,7 +14,6 @@ export const fetchCharacters = async (params: any): Promise<any> => {
     return response.data;
   } catch (error) {
     const handledError = handleApiError(error);
-    console.log(handledError);
     throw handledError;
   }
 };
