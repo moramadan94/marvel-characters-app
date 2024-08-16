@@ -181,6 +181,21 @@ Source: [React Native Security Documentation](https://reactnative.dev/docs/secur
 3. **Character Detail Screen**: View detailed information about selected characters.
 4. **Settings Screen**: Access and adjust app settings like themes and language.
 
+### Screenshots
+Login Screen
+![login](https://github.com/user-attachments/assets/97b980bb-cb17-4866-9431-a7f6ceb39ea2) 
+Home Screen
+![home1](https://github.com/user-attachments/assets/fd1331ca-8c66-4b53-a8d8-d9c8928137a9)
+Details Screen
+![details](https://github.com/user-attachments/assets/0fbb0184-6852-49ab-8c1d-3fe8c66e55ed)
+setting Screen
+![setting](https://github.com/user-attachments/assets/78cc51a4-193c-43c1-9886-bf3bb4ee62a1)
+Login Screen (dark)
+![dark-login](https://github.com/user-attachments/assets/61c517d4-dc45-4676-914b-a0d7f3cf738d)
+Home Screen (dark)
+![dark-home](https://github.com/user-attachments/assets/454dbaf6-ef71-4efb-b28b-14f84301e934)
+
+
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request. For significant changes, open an issue to discuss your ideas first.
