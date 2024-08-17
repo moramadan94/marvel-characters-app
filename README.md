@@ -77,49 +77,90 @@ Never store sensitive API keys in your app code. Anything included in your code 
 
 Source: [React Native Security Documentation](https://reactnative.dev/docs/security#storing-sensitive-info)
 
-### Running the App
 
-#### iOS Setup
+## Running the App
 
-1. **Install Dependencies**:
+### iOS Setup
 
-   ```bash
-   cd ios
-   bundle install
-   ```
+### Install Dependencies
 
-2. **Install iOS Pods**:
+#### **Recommended Approach**
 
+To ensure consistency and avoid potential version conflicts, follow these steps:
+
+1. **Install the Required Bundler Dependencies:**
+
+   - Navigate to the `ios` folder:
+     ```bash
+     cd ios
+     ```
+
+   - Install Bundler:
+     ```bash
+     bundle install
+     ```
+
+     This command installs the dependencies listed in the Gemfile, including the specific version of CocoaPods needed for your project.
+
+2. **Install iOS Pods:**
+
+   After running `bundle install`, use the following command:
    ```bash
    bundle exec pod install
    ```
 
-   - This ensures the specific version of CocoaPods is used as defined in the `Gemfile`.
-   - Alternatively, you can run `pod install`, which uses the globally installed version of CocoaPods.
+3. **Why Use the Recommended Approach?**
 
-     **When to Use**:
+   - Ensures the specific version of CocoaPods defined in your Gemfile is used, maintaining consistency across development environments.
+   - Guarantees that everyone working on the project is using the exact same version of CocoaPods, reducing potential conflicts and issues.
 
-   - Use this command after running `bundle install` to install or update the CocoaPods dependencies in your `ios` directory.
-   - It ensures that the version of CocoaPods used is the one specified in the `Gemfile`, which helps maintain consistency across different development environments.
+4. **When to Use:**
 
+   - Use `bundle exec pod install` after running `bundle install` to install or update the CocoaPods dependencies in your iOS directory.
+   - Ideal for teams or CI/CD pipelines where consistent versions of CocoaPods are critical for project stability.
+
+---
+
+#### **Alternative Approach**
+
+If you prefer to use the globally installed version of CocoaPods, follow these steps:
+
+1. **Install iOS Pods:**
+
+   - Navigate to the `ios` folder:
+     ```bash
+     cd ios
+     ```
+
+   - Install iOS Pods using the globally installed version:
      ```bash
      pod install
      ```
 
-   - This command installs the CocoaPods dependencies for your iOS project using the globally installed version of CocoaPods.
+2. **Why Use the Alternative Approach?**
 
-     **When to Use**:
+   - Uses the globally installed version of CocoaPods on your machine, which can be simpler and quicker.
+   - Suitable for environments where consistency with specific versions is not critical.
 
-   - Use `pod install` when you want to install CocoaPods dependencies using whatever version of CocoaPods is installed globally on your machine.
-   - This command is simpler and quicker, but it does not guarantee that the exact same version of CocoaPods is used as in other environments (e.g., other developers' machines or CI/CD pipelines).
+3. **When to Use:**
 
+   - Use `pod install` if you prefer a faster setup and do not need to guarantee that the exact same version of CocoaPods is used across different environments.
+   - More suitable for quick updates or for developers who manage their own global dependencies.
+
+### Summary:
+
+- **Recommended Approach:** Use `bundle exec pod install` after running `bundle install` to ensure consistency and avoid potential version conflicts.
+- **Alternative Approach:** Use `pod install` if you are confident that the globally installed version of CocoaPods is appropriate for your project and consistency across environments is not a concern.
+
+
+   
 3. **Run the iOS App**:
 
    ```bash
    npm run ios
    ```
 
-#### Android Setup
+### Android Setup
 
 1. **Install Android Dependencies**:
 
@@ -134,7 +175,7 @@ Source: [React Native Security Documentation](https://reactnative.dev/docs/secur
 ### Troubleshooting
 
 - For iOS: Re-run `bundle install` and `bundle exec pod install` if issues arise.
-- For Android: Ensure environment variables are set correctly and that an emulator or device is connected.
+- For Android: Re-run `./gradlew clean` Ensure environment variables are set correctly and that an emulator or device is connected. 
 
 ## Project Structure
 
