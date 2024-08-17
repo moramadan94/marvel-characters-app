@@ -46,7 +46,7 @@ export default (theme: ColorsThemeTypes) => {
     },
     comicItem: {
       padding: scale(12),
-      backgroundColor: Colors.lightGrey,
+      backgroundColor: Colors.red,
       shadowColor: theme.text,
       shadowOffset: {width: 0, height: 2},
       marginBottom: verticalScale(8),

@@ -1,4 +1,4 @@
-import {moderateScale, scale, verticalScale} from '@styles';
+import {Colors, moderateScale, scale, verticalScale} from '@styles';
 import {I18nManager, StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
@@ -30,6 +30,7 @@ export const styles = StyleSheet.create({
     paddingHorizontal: scale(10),
     fontSize: moderateScale(16),
     textAlign: I18nManager.isRTL ? 'right' : 'left',
+    color: Colors.black,
   },
   searchIcon: {
     width: scale(20),

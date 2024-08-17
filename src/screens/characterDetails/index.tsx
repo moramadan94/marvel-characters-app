@@ -83,7 +83,7 @@ const CharacterDetail: React.FC<CharacterDetailScreenProps> = ({route}) => {
                 {translate('details.noComics')}
               </Text>
             }
-            showsVerticalScrollIndicator={false}
+            showsVerticalScrollIndicator={true}
             showsHorizontalScrollIndicator={false}
           />
         </View>
